@@ -1,4 +1,4 @@
-# Appointy-Golang-Task
+# Appointy Golang Tech Task
 
 # Task Document
 https://docs.google.com/document/d/1sFhVumoczf_PmaL_R__Rm9AHqaHsUWgj1x9YcQP6Is4/preview?pru=AAABfIQlpAg*OvSXDNnjm9wo0TbhvDB9XA
