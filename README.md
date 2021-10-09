@@ -18,3 +18,18 @@ Check Appointy Task.postman_collection.json
  - Only std packages
  - Used SHA256 for hashing passwords
  - MongoDB drivers for connecting to MongoDB (localhost)
+
+# Collections used in MongoDB
+1. Users - Id, Name, Email, Password (hashed)
+2. Posts - Id, Caption, Image URL, Posted Timestamp
+
+# What's left
+1. List all posts of a user - GET request - URL should be ‘/posts/users/:Id here'
+
+# Code Merits
+1. Proper commented codes
+2. Proper modules for easy scalibility
+3. Strictly used std golang packages 
+4. Quality of code
+5. Reusable code
+6. Consistency in code
