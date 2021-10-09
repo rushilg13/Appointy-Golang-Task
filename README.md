@@ -13,9 +13,9 @@ https://docs.google.com/document/d/1sFhVumoczf_PmaL_R__Rm9AHqaHsUWgj1x9YcQP6Is4/
 </ol>
 
 # Documentation
-Check 
-<b>Appointy Task.postman_collection.json </b>
-<b>Screenshots.pdf </b>
+Check <br>
+<b>1. Appointy Task.postman_collection.json </b>
+<b>2. Screenshots.pdf </b>
 
 # Dependencies Used
  - Only std packages
