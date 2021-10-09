@@ -33,3 +33,9 @@ Check Appointy Task.postman_collection.json
 4. Quality of code
 5. Reusable code
 6. Consistency in code
+
+# How to run
+1. Clone repository
+2. RUN - go get go.mongodb.org/mongo-driver/mongo
+3. go run main.go
+4. Database will be setup on its own. used localhost mongodb and not cloud.
