@@ -19,6 +19,7 @@ func main() {
 
 		var newUser users.User
 		err := json.NewDecoder(r.Body).Decode(&newUser)
+		fmt.Println("(Passwords are hashed before storing in database)")
 		fmt.Println(newUser)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
@@ -31,7 +32,8 @@ func main() {
 	//GET users/{id}
 	http.HandleFunc("/users/", func(w http.ResponseWriter, r *http.Request) {
 		id := strings.TrimPrefix(r.URL.Path, "/users/")
-		fmt.Println(id)
+		fmt.Println("ID Entered is ", id)
+		fmt.Println(users.GetUser(id))
 		if id != "" {
 			json.NewEncoder(w).Encode(users.GetUser(id))
 		}
@@ -44,6 +46,7 @@ func main() {
 
 		var newPost posts.Post
 		err := json.NewDecoder(r.Body).Decode(&newPost)
+		fmt.Println("New Post data is ->")
 		fmt.Println(newPost)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusBadRequest)
@@ -56,11 +59,13 @@ func main() {
 	//GET posts/{id}
 	http.HandleFunc("/posts/", func(w http.ResponseWriter, r *http.Request) {
 		id := strings.TrimPrefix(r.URL.Path, "/posts/")
-		fmt.Println(id)
+		fmt.Println("ID Entered is ", id)
+		fmt.Println(posts.GetPost(id))
 		if id != "" {
 			json.NewEncoder(w).Encode(posts.GetPost(id))
 		}
 	})
 
+	fmt.Println("Served at port 8085")
 	log.Fatal(http.ListenAndServe(":8085", nil))
 }

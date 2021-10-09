@@ -12,7 +12,7 @@ import (
 
 func CreateUser(newUser User) *mongo.InsertOneResult {
 	client, error := dbservice.GetMongoClient()
-	fmt.Println(client, error)
+	if error != nil {	fmt.Println(error)  }
 	var userCollection = client.Database(dbservice.DB).Collection("users") //Connect to local MongoDB
 	pwd := newUser.Password
 	h := sha256.New()
