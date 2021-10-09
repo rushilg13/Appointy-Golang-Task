@@ -4,7 +4,7 @@
 https://docs.google.com/document/d/1sFhVumoczf_PmaL_R__Rm9AHqaHsUWgj1x9YcQP6Is4/preview?pru=AAABfIQlpAg*OvSXDNnjm9wo0TbhvDB9XA
 
 # Endpoints
-<h2> https://documenter.getpostman.com/view/16298894/UUy7cQDg </h2>
+<b> https://documenter.getpostman.com/view/16298894/UUy7cQDg </b>
 <ol>
   <li> POST localhost:8085/users </li>
   <li> GET localhost:8085/users/:id </li>
