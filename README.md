@@ -29,11 +29,12 @@ Check Appointy Task.postman_collection.json
 
 # Code Merits
 1. Proper commented codes
-2. Proper modules for easy scalibility
-3. Strictly used std golang packages 
-4. Quality of code
-5. Reusable code
-6. Consistency in code
+2. Readable code
+3. Proper modules for easy scalibility
+4. Strictly used std golang packages 
+5. Quality of code
+6. Reusable code
+7. Consistency in code
 
 # How to run
 1. Clone repository
