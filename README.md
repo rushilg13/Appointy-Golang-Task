@@ -14,4 +14,7 @@ https://docs.google.com/document/d/1sFhVumoczf_PmaL_R__Rm9AHqaHsUWgj1x9YcQP6Is4/
 # Documentation
 Check Appointy Task.postman_collection.json 
 
-#
+# Dependencies Used
+ - Only std packages
+ - Used SHA256 for hashing passwords
+ - MongoDB drivers for connecting to MongoDB (localhost)
